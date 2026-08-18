@@ -13,4 +13,3 @@ router.post("/refresh-token", refreshToken);
 
 export default router;
 
-// NdNkkrd7MLjLZ0sc
