@@ -16,7 +16,7 @@ router.get("/", protectRoute, adminRoute, getAllProducts);
 router.get("/featured", getFeaturedProducts);
 router.get("/recommendations", getRecommendedProducts);
 router.get("/category/:category", getProductsByCategory);
-router.put("/:id", protectRoute, adminRoute, toggleFeaturedProduct);
+router.patch("/:id", protectRoute, adminRoute, toggleFeaturedProduct);
 router.post("/", protectRoute, adminRoute, createProduct);
 router.delete("/:id", protectRoute, adminRoute, deleteProduct);
 
